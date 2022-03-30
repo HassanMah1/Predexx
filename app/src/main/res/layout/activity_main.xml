@@ -26,7 +26,7 @@
         android:text="PREDEXX"
         android:textColor="@color/prdexx_text"
         android:textStyle="bold"
-        android:textSize="37dp"
+        android:textSize="37sp"
         android:textAlignment="center"
         />
         <TextView
@@ -36,7 +36,7 @@
             android:text="Engine"
             android:textColor="@color/white"
             android:textStyle="italic"
-            android:textSize="31dp"
+            android:textSize="31sp"
             android:layout_marginTop="7dp" />
     </LinearLayout>
     <LinearLayout
@@ -48,14 +48,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#EBFFFFFF"
-            android:textSize="22dp"
+            android:textSize="22sp"
             android:textAlignment="center"
             android:text="Sign in"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/prdexx_text"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textAlignment="center"
             android:text="PREDEXX ENGINE: 2022"/>
         <EditText
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:hint="Enter Password"
             android:paddingLeft="20dp"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:background="@drawable/edit_text_background"
             android:layout_marginTop="20dp"
             android:height="63dp"
@@ -90,6 +90,7 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:text="Login"
+            android:textSize="20sp"
             android:background="@drawable/btn_background"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"/>
@@ -104,7 +105,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_gravity="center"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:drawableRight="@drawable/telegram_icons"
         android:textColor="@color/white"
         android:text="Join Telegram Group"
