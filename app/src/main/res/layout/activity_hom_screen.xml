@@ -1,271 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="25dp"
-    android:background="@color/black"
-    tools:context=".HomScreenActivity">
-<LinearLayout
-    android:id="@+id/ll1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:textColor="@color/prdexx_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PREDEXX"
-        android:textSize="24sp"/>
-    <TextView
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Engine"
-        android:textSize="24sp"/>
-</LinearLayout>
+    android:layout_height="match_parent">
 
-
-    <TextView
-        android:id="@+id/tv_remainingtime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ll1"
-        android:layout_alignParentRight="true"
-        android:text="Remaining Time"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
-
-    <LinearLayout
-        android:id="@+id/ll2"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_remainingtime"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:padding="25dp"
+
+        tools:context=".HomScreenActivity">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <!--            days-->
-            <TextView
-                android:id="@+id/tv_Days"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DAYS"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-            <!--           hours -->
-            <TextView
-                android:id="@+id/tv_Hours"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_Days"
-                android:text="HOUR"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <!--          Min  -->
-            <TextView
-                android:id="@+id/tv_Min"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_Hours"
-                android:text="Min"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
+            android:id="@+id/ll1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:textSize="35sp"
-                android:id="@+id/tv_day_value1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_Days"
-                android:text="0"
-                android:textColor="@color/white" />
+                android:text="PREDEXX"
+                android:textColor="@color/prdexx_text"
+                android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/tv_day_value2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_Days"
-                android:layout_toRightOf="@+id/tv_day_value1"
-                android:text="0"
-                android:textSize="35sp"
-                android:textColor="@color/white" />
-
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:textSize="35sp"
-                android:id="@+id/tv_hour_value1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_Hours"
-                android:text="0"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:textSize="35sp"
-                android:id="@+id/tv_hour_value2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_Hours"
-                android:layout_toRightOf="@+id/tv_hour_value1"
-                android:text="0"
-                android:textColor="@color/white" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <TextView
-                android:textSize="35sp"
-                android:id="@+id/tv_min_value1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_Min"
-                android:text="0"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:textSize="35sp"
-                android:id="@+id/tv_min_value2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_Min"
-                android:layout_toRightOf="@+id/tv_min_value1"
-                android:text="0"
-                android:textColor="@color/white" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:text="Engine"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
         </LinearLayout>
-    </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_announcment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ll2"
-        android:layout_alignParentRight="true"
-        android:text="Annoucment"
-        android:textColor="@color/tv_announcement"
-        android:textSize="20sp" />
-
-    <RelativeLayout
-        android:id="@+id/child_rl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_announcment">
-
-        <ImageView
-
-            android:id="@+id/iv_icon_annoucment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/campaign_black_48dp" />
 
         <TextView
-        android:textSize="13sp"
+            android:id="@+id/tv_remainingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="Remaining Time"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_icon_annoucment"
-            android:text="Yousuf Bhai ki tarat se annoucement ki jati ha k aj k din yeh loader ap sak logo k liye free ha, to enjoye karen PREDEX loader for free."
-            android:textColor="@color/white" />
-    </RelativeLayout>
-<!--   ll3 -->
-    <LinearLayout
-        android:id="@+id/ll3"
-        android:layout_below="@+id/child_rl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
+            android:layout_below="@id/tv_remainingtime"
+            android:background="@drawable/timebackg"
+            android:orientation="vertical">
 
-            android:textSize="20sp"
-            android:backgroundTint="@color/green"
-            android:layout_weight="1"
-            android:id="@+id/button_start"
-            android:layout_width="wrap_content"
-            android:layout_height="114dp"
-            android:text="START"/>
-        <Space
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--            days-->
+                <TextView
+                    android:id="@+id/tv_Days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAYS"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <!--           hours -->
+                <TextView
+                    android:id="@+id/tv_Hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_Days"
+                    android:text="HOUR"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <!--          Min  -->
+                <TextView
+                    android:id="@+id/tv_Min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_Hours"
+                    android:text="MIN"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv_day_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Days"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tv_day_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Days"
+                    android:layout_toRightOf="@+id/tv_day_value1"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <Space
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_hour_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Hours"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tv_hour_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Hours"
+                    android:layout_toRightOf="@+id/tv_hour_value1"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_min_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Min"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tv_min_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_Min"
+                    android:layout_toRightOf="@+id/tv_min_value1"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_announcment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"/>
+            android:layout_below="@id/ll2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="Annoucment"
+            android:textColor="@color/tv_announcement"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/child_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_announcment"
+            android:background="@drawable/simpleborder"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:id="@+id/iv_icon_annoucment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/campaign_black_48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_icon_annoucment"
+
+                android:text="Yousuf Bhai ki tarat se annoucement ki jati ha k aj k din yeh loader ap sak logo k liye free ha, to enjoye karen PREDEX loader for free."
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        <!--   ll3 -->
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/child_rl"
+            android:layout_marginTop="20dp">
+
+            <Button
+
+                android:id="@+id/button_start"
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+                android:text="START"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/button_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red"
+                android:text="STOP"
+                android:textSize="20sp" />
+        </LinearLayout>
+
         <Button
-            android:textSize="20sp"
-            android:backgroundTint="@color/red"
-            android:layout_weight="1"
-            android:id="@+id/button_stop"
+            android:id="@+id/button_import_settings"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@id/ll3"
+            android:layout_marginTop="10dp"
+            android:text="Import Settings"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_export_settings"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@id/button_import_settings"
+            android:layout_marginTop="10dp"
+            android:text="Export Settings"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@id/button_export_settings"
+            android:layout_marginTop="15dp"
+            android:text="LOGOUT"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_joinTG"
             android:layout_width="wrap_content"
-            android:layout_height="114dp"
-            android:text="STOP"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_logout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/telegram_icons"
+            android:text="Join Telegram Group"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
 
-    <Button
-        android:textSize="16sp"
-        android:id="@+id/button_import_settings"
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:layout_below="@id/ll3"
-        android:text="Import Settings" />
-    <Button
-        android:textSize="16sp"
-        android:layout_below="@id/button_import_settings"
-        android:id="@+id/button_export_settings"
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:text="Export Settings"/>
-
-    <Button
-        android:textSize="20sp"
-        android:id="@+id/button_logout"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:layout_below="@id/button_export_settings"
-        android:text="LOGOUT" />
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:id="@+id/tv_joinTG"
-        android:layout_below="@id/button_logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Join Telegram Group"
-        android:drawableRight="@drawable/telegram_icons"/>
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:layout_below="@id/tv_joinTG"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PREDEXX LOADER: VERSION 1.0"/>
-</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_joinTG"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="PREDEXX LOADER: VERSION 1.0"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</ScrollView>
