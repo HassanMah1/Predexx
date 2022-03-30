@@ -1,18 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:padding="10dp"
+        android:src="@drawable/logo_main">
+    </ImageView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="62dp"
+      >
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:text="PREDEXX"
+        android:textColor="@color/prdexx_text"
+        android:textStyle="bold"
+        android:textSize="37dp"
+        android:textAlignment="center"
+        />
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Engine"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="31dp"
+            android:layout_marginTop="7dp" />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#EBFFFFFF"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            android:text="Sign in"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/prdexx_text"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:text="PREDEXX ENGINE: 2022"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter ID"
+            android:background="@drawable/edit_text_background"
+            android:drawableEnd="@drawable/id_icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:height="63dp"
+            android:textSize="17dp"
+           android:textColorHint="#A6FFFFFF"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Password"
+            android:paddingLeft="20dp"
+            android:textSize="17dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="20dp"
+            android:height="63dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+           android:textColorHint="#A6FFFFFF"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Login"
+            android:background="@drawable/btn_background"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="17dp"
+        android:drawableRight="@drawable/telegram_icons"
+        android:textColor="@color/white"
+        android:text="Join Telegram Group"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:layout_marginTop="17dp"
+        android:textColor="#99FFFFFF"
+        android:text="PREDEXX LOADER:  VERSION 1.0"
+        />
+</LinearLayout>
+
+</LinearLayout>
