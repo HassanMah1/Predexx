@@ -59,6 +59,7 @@
             android:textAlignment="center"
             android:text="PREDEXX ENGINE: 2022"/>
         <EditText
+            android:id="@+id/et_id"
             android:layout_width="match_parent"
             android:hint="Enter ID"
             android:background="@drawable/edit_text_background"
@@ -73,6 +74,7 @@
            android:textColorHint="#A6FFFFFF"
             android:layout_height="wrap_content"/>
         <EditText
+            android:id="@+id/et_Password"
             android:layout_width="match_parent"
             android:hint="Enter Password"
             android:paddingLeft="20dp"
