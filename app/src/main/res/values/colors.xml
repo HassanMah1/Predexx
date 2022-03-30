@@ -10,4 +10,7 @@
     <color name="prdexx_text">#118BEE</color>
     <color name="Edit_text_color">#272727</color>
     <color name="btn_background">#1295FF</color>
+    <color name="green">#00D673</color>
+    <color name="red">#FF4D3E</color>
+    <color name="tv_announcement">#E88F00</color>
 </resources>
